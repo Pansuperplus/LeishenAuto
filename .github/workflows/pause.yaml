@@ -4,7 +4,7 @@ on:
   push:
   schedule:
    # 定时任务，北京时间24点执行任务 16 + 8 = 24
-    - cron: '13 08 * * *'
+    - cron: '35 10 * * *'
 
 jobs:
   build:
@@ -21,9 +21,10 @@ jobs:
       - name: "加速器暂停脚本"
         run: |
           node main.js
-      - name: "通知"
+      - name: "Notice"
         run: |
-          sh notice.sh
+          chmod a+x notice.sh
+          ./notice.sh
         env:
           LEISHEN_USERNAME: ${{ secrets.LEISHEN_USERNAME }}
           LEISHEN_PASSWORD: ${{ secrets.LEISHEN_PASSWORD }}
