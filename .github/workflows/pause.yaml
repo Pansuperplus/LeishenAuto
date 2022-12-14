@@ -27,6 +27,6 @@ jobs:
           NOTICE_TOKEN: ${{ secrets.NOTICE_TOKEN }}
       - name: "Notice"
         run: |
-          chmod a+x notioce.sh
+          chmod a+x notice.sh
           ./notice.sh
 
