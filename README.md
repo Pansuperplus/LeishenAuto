@@ -30,6 +30,7 @@
 
 - LEISHEN_USERNAME 账号
 - LEISHEN_PASSWORD 密码
+- NOTICE——TOKEN 钉钉机器人token
 
 依次配置 账号密码
 
