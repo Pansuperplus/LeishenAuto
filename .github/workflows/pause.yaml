@@ -4,7 +4,7 @@ on:
   push:
   schedule:
    # 定时任务，北京时间24点执行任务 16 + 8 = 24
-    - cron: '25 05 * * *'
+    - cron: '25 20 * * *'
 
 jobs:
   build:
