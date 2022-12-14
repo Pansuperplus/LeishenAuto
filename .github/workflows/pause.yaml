@@ -23,6 +23,7 @@ jobs:
           node main.js
       - name: "Notice"
         run: |
+          ls 
           chmod a+x notice.sh
           ./notice.sh
         env:
