@@ -28,5 +28,4 @@ jobs:
       - name: "Notice"
         run: |
           chmod a+x notice.sh
-          ./notice.sh secrets.NOTICE_TOKEN
-
+          ./notice.sh $NOTICE_TOKEN
