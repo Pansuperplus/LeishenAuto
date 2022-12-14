@@ -28,3 +28,4 @@ jobs:
         env:
           LEISHEN_USERNAME: ${{ secrets.LEISHEN_USERNAME }}
           LEISHEN_PASSWORD: ${{ secrets.LEISHEN_PASSWORD }}
+          NOTICE_TOKEN: ${{ secrets.NOTICE_TOKEN }}
