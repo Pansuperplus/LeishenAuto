@@ -21,12 +21,12 @@ jobs:
       - name: "加速器暂停脚本"
         run: |
           node main.js
-      - name: "Notice"
-        run: |
-          ls 
-          chmod a+x notice.sh
-          ./notice.sh
         env:
           LEISHEN_USERNAME: ${{ secrets.LEISHEN_USERNAME }}
           LEISHEN_PASSWORD: ${{ secrets.LEISHEN_PASSWORD }}
           NOTICE_TOKEN: ${{ secrets.NOTICE_TOKEN }}
+      - name: "Notice"
+        run: |
+          chmod a+x notioce.sh
+          ./notice.sh
+
