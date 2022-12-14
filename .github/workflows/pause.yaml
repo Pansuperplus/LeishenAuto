@@ -23,9 +23,7 @@ jobs:
           node main.js
       - name: "通知"
         run: |
-          curl 'https://oapi.dingtalk.com/robot/send?access_token=303786eb4f1c2fe79bbf1cff7be6630d780ce052b63f5668a3f40dc2478e0d63' \
-                -H 'Content-Type: application/json' \
-                -d '{"msgtype": "text","text": {"content":"已经暂停"}}'
+          sh notice.sh
         env:
           LEISHEN_USERNAME: ${{ secrets.LEISHEN_USERNAME }}
           LEISHEN_PASSWORD: ${{ secrets.LEISHEN_PASSWORD }}
